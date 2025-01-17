@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D317D6ED-C7E2-4A92-8A41-19E6CB0781CB}|SGII_Back\\SGII_Back.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\sgii_back\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D317D6ED-C7E2-4A92-8A41-19E6CB0781CB}|SGII_Back\\SGII_Back.csproj|solutionrelative:sgii_back\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\SGII_Back\\Program.cs",
+              "RelativeDocumentMoniker": "SGII_Back\\Program.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\SGII_Back\\Program.cs",
+              "RelativeToolTip": "SGII_Back\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T17:30:08.875Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
