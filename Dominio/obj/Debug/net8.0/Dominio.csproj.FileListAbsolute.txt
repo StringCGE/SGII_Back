@@ -1,0 +1,16 @@
+C:\Users\Chiito\Documents\GitHub\SGII_Back\Dominio\obj\Debug\net8.0\Dominio.csproj.AssemblyReference.cache
+C:\Users\Chiito\Documents\GitHub\SGII_Back\Dominio\obj\Debug\net8.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chiito\Documents\GitHub\SGII_Back\Dominio\obj\Debug\net8.0\Dominio.AssemblyInfoInputs.cache
+C:\Users\Chiito\Documents\GitHub\SGII_Back\Dominio\obj\Debug\net8.0\Dominio.AssemblyInfo.cs
+C:\Users\Chiito\Documents\GitHub\SGII_Back\Dominio\obj\Debug\net8.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Chiito\Documents\GitHub\SGII_Back\Dominio\obj\Debug\net8.0\Dominio.sourcelink.json
+C:\Users\Chiito\Documents\GitHub\SGII_Back\Dominio\bin\Debug\net8.0\Dominio.deps.json
+C:\Users\Chiito\Documents\GitHub\SGII_Back\Dominio\bin\Debug\net8.0\Dominio.dll
+C:\Users\Chiito\Documents\GitHub\SGII_Back\Dominio\bin\Debug\net8.0\Dominio.pdb
+C:\Users\Chiito\Documents\GitHub\SGII_Back\Dominio\bin\Debug\net8.0\DominioCompartido.dll
+C:\Users\Chiito\Documents\GitHub\SGII_Back\Dominio\bin\Debug\net8.0\DominioCompartido.pdb
+C:\Users\Chiito\Documents\GitHub\SGII_Back\Dominio\obj\Debug\net8.0\Dominio.csproj.Up2Date
+C:\Users\Chiito\Documents\GitHub\SGII_Back\Dominio\obj\Debug\net8.0\Dominio.dll
+C:\Users\Chiito\Documents\GitHub\SGII_Back\Dominio\obj\Debug\net8.0\refint\Dominio.dll
+C:\Users\Chiito\Documents\GitHub\SGII_Back\Dominio\obj\Debug\net8.0\Dominio.pdb
+C:\Users\Chiito\Documents\GitHub\SGII_Back\Dominio\obj\Debug\net8.0\ref\Dominio.dll

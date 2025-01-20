@@ -3,8 +3,139 @@
   "WorkspaceRootPath": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D317D6ED-C7E2-4A92-8A41-19E6CB0781CB}|SGII_Back\\SGII_Back.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\sgii_back\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D317D6ED-C7E2-4A92-8A41-19E6CB0781CB}|SGII_Back\\SGII_Back.csproj|solutionrelative:sgii_back\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\db\\dbpersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\db\\dbpersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SGII_BackDB/True/SqlTable/dbo.Persona.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\db\\dbuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\db\\dbuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D317D6ED-C7E2-4A92-8A41-19E6CB0781CB}|SGII_Back\\SGII_Back.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\sgii_back\\sqlquery3.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{D317D6ED-C7E2-4A92-8A41-19E6CB0781CB}|SGII_Back\\SGII_Back.csproj|solutionrelative:sgii_back\\sqlquery3.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\SQLQuery6.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SQLQuery6.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\basededatos.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\basededatos.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\db\\dbsqlserver2022.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\db\\dbsqlserver2022.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DEA961F-8D81-477C-88D4-6E3CDC2CC7F1}|Application\\Application.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\application\\dto\\userdto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DEA961F-8D81-477C-88D4-6E3CDC2CC7F1}|Application\\Application.csproj|solutionrelative:application\\dto\\userdto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DEA961F-8D81-477C-88D4-6E3CDC2CC7F1}|Application\\Application.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\application\\dto\\userdto\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DEA961F-8D81-477C-88D4-6E3CDC2CC7F1}|Application\\Application.csproj|solutionrelative:application\\dto\\userdto\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\interfaces\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\interfaces\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DEA961F-8D81-477C-88D4-6E3CDC2CC7F1}|Application\\Application.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\application\\services\\authapp\\authappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DEA961F-8D81-477C-88D4-6E3CDC2CC7F1}|Application\\Application.csproj|solutionrelative:application\\services\\authapp\\authappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D317D6ED-C7E2-4A92-8A41-19E6CB0781CB}|SGII_Back\\SGII_Back.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\sgii_back\\controllers\\auth\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D317D6ED-C7E2-4A92-8A41-19E6CB0781CB}|SGII_Back\\SGII_Back.csproj|solutionrelative:sgii_back\\controllers\\auth\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6DEA961F-8D81-477C-88D4-6E3CDC2CC7F1}|Application\\Application.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\application\\dto\\userdto\\userupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6DEA961F-8D81-477C-88D4-6E3CDC2CC7F1}|Application\\Application.csproj|solutionrelative:application\\dto\\userdto\\userupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D317D6ED-C7E2-4A92-8A41-19E6CB0781CB}|SGII_Back\\SGII_Back.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\sgii_back\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D317D6ED-C7E2-4A92-8A41-19E6CB0781CB}|SGII_Back\\SGII_Back.csproj|solutionrelative:sgii_back\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91BCF05D-AAB5-42E1-AE45-47A7CE393786}|Infraestructure\\Infraestructure.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\infraestructure\\persistence\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91BCF05D-AAB5-42E1-AE45-47A7CE393786}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\persistence\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91BCF05D-AAB5-42E1-AE45-47A7CE393786}|Infraestructure\\Infraestructure.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\infraestructure\\persistence\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91BCF05D-AAB5-42E1-AE45-47A7CE393786}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\persistence\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\interfaces\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\interfaces\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\dto\\appusuario\\dto\\appusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\dto\\appusuario\\dto\\appusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\dto\\emailserviceprofile\\publicousuarioutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\dto\\emailserviceprofile\\publicousuarioutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\entities\\appusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\entities\\appusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91BCF05D-AAB5-42E1-AE45-47A7CE393786}|Infraestructure\\Infraestructure.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\infraestructure\\infraestructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{91BCF05D-AAB5-42E1-AE45-47A7CE393786}|Infraestructure\\Infraestructure.csproj|solutionrelative:infraestructure\\infraestructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\dto\\appusuario\\filterdto\\appusuariofilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\dto\\appusuario\\filterdto\\appusuariofilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D783E131-9B9D-49B7-A3FC-207E8A8F51B2}|DominioCompartido\\DominioCompartido.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominiocompartido\\requestpaginated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D783E131-9B9D-49B7-A3FC-207E8A8F51B2}|DominioCompartido\\DominioCompartido.csproj|solutionrelative:dominiocompartido\\requestpaginated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\interfaces\\services\\icrudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\interfaces\\services\\icrudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\interfaces\\services\\iappusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\interfaces\\services\\iappusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\interfaces\\repositories\\iappusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\interfaces\\repositories\\iappusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\dominio\\basededatos.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{5D306238-5A6C-4D12-B9EE-A6785855C298}|Dominio\\Dominio.csproj|solutionrelative:dominio\\basededatos.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\SQLQuery6.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SQLQuery6.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\SQLQuery6.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SQLQuery6.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D317D6ED-C7E2-4A92-8A41-19E6CB0781CB}|SGII_Back\\SGII_Back.csproj|c:\\users\\chiito\\documents\\github\\sgii_back\\sgii_back\\sqlquery3.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{D317D6ED-C7E2-4A92-8A41-19E6CB0781CB}|SGII_Back\\SGII_Back.csproj|solutionrelative:sgii_back\\sqlquery3.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +145,416 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\SGII_Back\\Program.cs",
               "RelativeDocumentMoniker": "SGII_Back\\Program.cs",
               "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\SGII_Back\\Program.cs",
               "RelativeToolTip": "SGII_Back\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBIAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T17:30:08.875Z",
+              "WhenOpened": "2025-01-20T11:27:22.274Z",
+              "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\SGII_Back\\Controllers\\auth\\AuthController.cs",
+              "RelativeDocumentMoniker": "SGII_Back\\Controllers\\auth\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\SGII_Back\\Controllers\\auth\\AuthController.cs",
+              "RelativeToolTip": "SGII_Back\\Controllers\\auth\\AuthController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwBoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T11:26:24.468Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthAppService.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Application\\Services\\AuthApp\\AuthAppService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\AuthApp\\AuthAppService.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Application\\Services\\AuthApp\\AuthAppService.cs",
+              "RelativeToolTip": "Application\\Services\\AuthApp\\AuthAppService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAQwDwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T08:39:04.083Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Interfaces\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Dominio\\Interfaces\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Interfaces\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "Dominio\\Interfaces\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T15:20:08.28Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonaController.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\SGII_Back\\Controllers\\PersonaController.cs",
+              "RelativeDocumentMoniker": "SGII_Back\\Controllers\\PersonaController.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\SGII_Back\\Controllers\\PersonaController.cs",
+              "RelativeToolTip": "SGII_Back\\Controllers\\PersonaController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAhwBIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T17:20:10.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DbPersona.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\DB\\DbPersona.cs",
+              "RelativeDocumentMoniker": "Dominio\\DB\\DbPersona.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\DB\\DbPersona.cs",
+              "RelativeToolTip": "Dominio\\DB\\DbPersona.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAgwJ8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:50:33.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "dbo.Persona [Datos]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SGII_BackDB/True/SqlTable/dbo.Persona.sql",
+              "ToolTip": "dbo.Persona [Datos]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-20T16:54:13.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SQLQuery3.sql ",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\SGII_Back\\SQLQuery3.sql",
+              "RelativeDocumentMoniker": "SGII_Back\\SQLQuery3.sql",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\SGII_Back\\SQLQuery3.sql",
+              "RelativeToolTip": "SGII_Back\\SQLQuery3.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-20T15:52:47.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SQLQuery6.sql ",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\SQLQuery6.sql",
+              "RelativeDocumentMoniker": "SQLQuery6.sql",
+              "ToolTip": "SQLQuery6.sql ",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-20T15:51:26.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DbUser.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\DB\\DbUser.cs",
+              "RelativeDocumentMoniker": "Dominio\\DB\\DbUser.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\DB\\DbUser.cs",
+              "RelativeToolTip": "Dominio\\DB\\DbUser.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAA4wKAAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T15:29:16.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BaseDeDatos.sql ",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\BaseDeDatos.sql",
+              "RelativeDocumentMoniker": "Dominio\\BaseDeDatos.sql",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\BaseDeDatos.sql",
+              "RelativeToolTip": "Dominio\\BaseDeDatos.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-20T15:50:42.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DbSQLServer2022.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\DB\\DbSQLServer2022.cs",
+              "RelativeDocumentMoniker": "Dominio\\DB\\DbSQLServer2022.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\DB\\DbSQLServer2022.cs",
+              "RelativeToolTip": "Dominio\\DB\\DbSQLServer2022.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T15:50:14.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Application\\DTO\\UserDTO\\UserDTO.cs",
+              "RelativeDocumentMoniker": "Application\\DTO\\UserDTO\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Application\\DTO\\UserDTO\\UserDTO.cs",
+              "RelativeToolTip": "Application\\DTO\\UserDTO\\UserDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T08:37:59.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Application\\DTO\\UserDTO\\UserRequest.cs",
+              "RelativeDocumentMoniker": "Application\\DTO\\UserDTO\\UserRequest.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Application\\DTO\\UserDTO\\UserRequest.cs",
+              "RelativeToolTip": "Application\\DTO\\UserDTO\\UserRequest.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T08:38:21.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Interfaces\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Dominio\\Interfaces\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Interfaces\\Services\\UserService.cs",
+              "RelativeToolTip": "Dominio\\Interfaces\\Services\\UserService.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAAwH4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T08:41:45.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Dominio\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Services\\AuthService.cs",
+              "RelativeToolTip": "Dominio\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T11:32:28.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Dominio\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Entities\\User.cs",
+              "RelativeToolTip": "Dominio\\Entities\\User.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T08:35:37.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Application\\DTO\\UserDTO\\UserUpdate.cs",
+              "RelativeDocumentMoniker": "Application\\DTO\\UserDTO\\UserUpdate.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Application\\DTO\\UserDTO\\UserUpdate.cs",
+              "RelativeToolTip": "Application\\DTO\\UserDTO\\UserUpdate.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T08:38:30.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Interfaces\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Dominio\\Interfaces\\Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Interfaces\\Services\\IAuthService.cs",
+              "RelativeToolTip": "Dominio\\Interfaces\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T11:28:57.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Infraestructure\\Persistence\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Persistence\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Infraestructure\\Persistence\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "Infraestructure\\Persistence\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAhwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T11:35:06.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Infraestructure\\Persistence\\Repository\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Persistence\\Repository\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Infraestructure\\Persistence\\Repository\\BaseRepository.cs",
+              "RelativeToolTip": "Infraestructure\\Persistence\\Repository\\BaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T12:43:23.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AppUsuarioDto.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\DTO\\AppUsuario\\Dto\\AppUsuarioDto.cs",
+              "RelativeDocumentMoniker": "Dominio\\DTO\\AppUsuario\\Dto\\AppUsuarioDto.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\DTO\\AppUsuario\\Dto\\AppUsuarioDto.cs",
+              "RelativeToolTip": "Dominio\\DTO\\AppUsuario\\Dto\\AppUsuarioDto.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T08:40:00.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PublicoUsuarioUtil.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\DTO\\EmailServiceProfile\\PublicoUsuarioUtil.cs",
+              "RelativeDocumentMoniker": "Dominio\\DTO\\EmailServiceProfile\\PublicoUsuarioUtil.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\DTO\\EmailServiceProfile\\PublicoUsuarioUtil.cs",
+              "RelativeToolTip": "Dominio\\DTO\\EmailServiceProfile\\PublicoUsuarioUtil.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA5wAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T08:32:33.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AppUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Entities\\AppUsuario.cs",
+              "RelativeDocumentMoniker": "Dominio\\Entities\\AppUsuario.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Entities\\AppUsuario.cs",
+              "RelativeToolTip": "Dominio\\Entities\\AppUsuario.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAuwA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T08:22:56.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Infraestructure",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Infraestructure\\Infraestructure.csproj",
+              "RelativeDocumentMoniker": "Infraestructure\\Infraestructure.csproj",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Infraestructure\\Infraestructure.csproj",
+              "RelativeToolTip": "Infraestructure\\Infraestructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-20T08:28:33.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RequestPaginated.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\DominioCompartido\\RequestPaginated.cs",
+              "RelativeDocumentMoniker": "DominioCompartido\\RequestPaginated.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\DominioCompartido\\RequestPaginated.cs",
+              "RelativeToolTip": "DominioCompartido\\RequestPaginated.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T08:27:14.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AppUsuarioFilter.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\DTO\\AppUsuario\\FilterDto\\AppUsuarioFilter.cs",
+              "RelativeDocumentMoniker": "Dominio\\DTO\\AppUsuario\\FilterDto\\AppUsuarioFilter.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\DTO\\AppUsuario\\FilterDto\\AppUsuarioFilter.cs",
+              "RelativeToolTip": "Dominio\\DTO\\AppUsuario\\FilterDto\\AppUsuarioFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T08:26:21.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ICrudService.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Interfaces\\Services\\ICrudService.cs",
+              "RelativeDocumentMoniker": "Dominio\\Interfaces\\Services\\ICrudService.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Interfaces\\Services\\ICrudService.cs",
+              "RelativeToolTip": "Dominio\\Interfaces\\Services\\ICrudService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAMwA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T08:25:54.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IAppUsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Interfaces\\Services\\IAppUsuarioService.cs",
+              "RelativeDocumentMoniker": "Dominio\\Interfaces\\Services\\IAppUsuarioService.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Interfaces\\Services\\IAppUsuarioService.cs",
+              "RelativeToolTip": "Dominio\\Interfaces\\Services\\IAppUsuarioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T08:24:08.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IAppUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Interfaces\\Repositories\\IAppUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Dominio\\Interfaces\\Repositories\\IAppUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\Chiito\\Documents\\GitHub\\SGII_Back\\Dominio\\Interfaces\\Repositories\\IAppUsuarioRepository.cs",
+              "RelativeToolTip": "Dominio\\Interfaces\\Repositories\\IAppUsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T08:21:50.747Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             }
           ]
         }

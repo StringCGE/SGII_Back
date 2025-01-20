@@ -14,7 +14,7 @@ namespace Dominio
         /// <summary>
         /// id de base de datos (idApi) de persona que tiene esta asignacion, la verdad no debe existir esto pero en fin
         /// </summary>
-        public int? idPersona { get; set; }
+        public bool? idPersona { get; set; }
         /// <summary>
         /// Instancia de la persona, aqui se puede registrar directo la existencia del ID sin los datos y lueg  los datos , El apuro
         /// </summary>

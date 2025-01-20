@@ -274,25 +274,25 @@ namespace Dominio.DB
                     nacionalidadDataTable.Columns.Add("nacionalidad_id", typeof(int));
                     var estadoCivilDataTable = new DataTable();
                     estadoCivilDataTable.Columns.Add("estadoCivil_id", typeof(int));
-                    if (fetchData.persona != null)
-                    {
-                        foreach (var sexo in fetchData.persona.sexo ?? new List<ClsSexo>())
-                        {
-                            sexoDataTable.Rows.Add(sexo.idApi);
-                        }
+                    //if (fetchData.persona != null)
+                    //{
+                    //    foreach (var sexo in fetchData.persona.sexo ?? new List<ClsSexo>())
+                    //    {
+                    //        sexoDataTable.Rows.Add(sexo.idApi);
+                    //    }
 
 
-                        foreach (var nacionalidad in fetchData.persona.nacionalidad ?? new List<ClsNacionalidad>())
-                        {
-                            nacionalidadDataTable.Rows.Add(nacionalidad.idApi);
-                        }
+                    //    foreach (var nacionalidad in fetchData.persona.nacionalidad ?? new List<ClsNacionalidad>())
+                    //    {
+                    //        nacionalidadDataTable.Rows.Add(nacionalidad.idApi);
+                    //    }
 
 
-                        foreach (var estadoCivil in fetchData.persona.estadoCivil ?? new List<ClsEstadoCivil>())
-                        {
-                            estadoCivilDataTable.Rows.Add(estadoCivil.idApi);
-                        }
-                    }
+                    //    foreach (var estadoCivil in fetchData.persona.estadoCivil ?? new List<ClsEstadoCivil>())
+                    //    {
+                    //        estadoCivilDataTable.Rows.Add(estadoCivil.idApi);
+                    //    }
+                    //}
                     
 
                     // Agregar los parámetros de las tablas temporales

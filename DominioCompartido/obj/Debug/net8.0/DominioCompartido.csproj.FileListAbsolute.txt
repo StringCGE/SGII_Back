@@ -1,0 +1,12 @@
+C:\Users\Chiito\Documents\GitHub\SGII_Back\DominioCompartido\bin\Debug\net8.0\DominioCompartido.deps.json
+C:\Users\Chiito\Documents\GitHub\SGII_Back\DominioCompartido\bin\Debug\net8.0\DominioCompartido.dll
+C:\Users\Chiito\Documents\GitHub\SGII_Back\DominioCompartido\bin\Debug\net8.0\DominioCompartido.pdb
+C:\Users\Chiito\Documents\GitHub\SGII_Back\DominioCompartido\obj\Debug\net8.0\DominioCompartido.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Chiito\Documents\GitHub\SGII_Back\DominioCompartido\obj\Debug\net8.0\DominioCompartido.AssemblyInfoInputs.cache
+C:\Users\Chiito\Documents\GitHub\SGII_Back\DominioCompartido\obj\Debug\net8.0\DominioCompartido.AssemblyInfo.cs
+C:\Users\Chiito\Documents\GitHub\SGII_Back\DominioCompartido\obj\Debug\net8.0\DominioCompartido.csproj.CoreCompileInputs.cache
+C:\Users\Chiito\Documents\GitHub\SGII_Back\DominioCompartido\obj\Debug\net8.0\DominioCompartido.sourcelink.json
+C:\Users\Chiito\Documents\GitHub\SGII_Back\DominioCompartido\obj\Debug\net8.0\DominioCompartido.dll
+C:\Users\Chiito\Documents\GitHub\SGII_Back\DominioCompartido\obj\Debug\net8.0\refint\DominioCompartido.dll
+C:\Users\Chiito\Documents\GitHub\SGII_Back\DominioCompartido\obj\Debug\net8.0\DominioCompartido.pdb
+C:\Users\Chiito\Documents\GitHub\SGII_Back\DominioCompartido\obj\Debug\net8.0\ref\DominioCompartido.dll

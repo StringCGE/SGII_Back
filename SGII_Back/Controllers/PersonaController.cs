@@ -1,4 +1,4 @@
-﻿using Dominio.DB;
+using Dominio.DB;
 using Dominio;
 using Microsoft.AspNetCore.Mvc;
 
@@ -108,4 +108,3 @@ namespace SGII_Back.Controllers
         }
     }
 }
-
