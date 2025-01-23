@@ -20,6 +20,8 @@ using SGII_Back.Application.Services.AuthApp;
 using SGII_Back.Dominio.Interfaces.Services;
 using SGII_Back.Dominio.Interfaces.Services;
 using SGII_Back.Dominio.Interfaces.Repositories;
+using Dominio;
+using Dominio.DB;
 
 
 namespace Application.Services.AuthApp;
@@ -41,52 +43,64 @@ public class AuthAppService : IAuthAppService
         //_unitOfWork = unitOfWork;
     }
 
-    public AuthDTO Login(AuthRequest login)
+    public async Task<AuthDTO> Login(AuthRequest login)
     {
-        (bool IsValid, User? User) _validUser = IsValidUser(login.User);
-
-        if (_validUser.IsValid && _validUser.User != null)
-        {
-            if (_authService.Autenticate(_validUser.User.Id, login.Password))
-            {
-                return new AuthDTO(GenerateJwtToken(_validUser.User), DateTimeOffset.Now);
+        var validUserResult = await IsValidUser(login.User);
+         AuthDTO au = new AuthDTO();
+        if (validUserResult.IsValid && validUserResult.User != null) {
+            if (await _authService.Autenticate(validUserResult.User.id, login.Password)) {
+                return new AuthDTO(GenerateJwtToken(validUserResult.User), DateTimeOffset.Now);
             }
+            au.intentos = await new DbUser().ObtenerIntentosPorIdAsync(validUserResult.User.id ?? 0);
+            au.usuarioBloqueado = false;
         }
-
-        return new AuthDTO();
+        if (!validUserResult.IsValid && validUserResult.User != null)
+        {
+            au.intentos = await new DbUser().ObtenerIntentosPorIdAsync(validUserResult.User.id ?? 0);
+            au.usuarioBloqueado = true;
+        }
+        else{
+            au.intentos = -1;
+        }
+        return au;
     }
 
-    private (bool IsValid, User? User) IsValidUser(string email)
+    private async Task<(bool IsValid, ClsUser? User)> IsValidUser(string email)
     {
-        User? _user = _userService.GetByEmail(email);
-        return (IsValid: _user != null, User: _user);
+        ClsUser? user = await _userService.GetByEmail(email);
+        if(user == null) return (IsValid: false, User: null);
+        if (user.intentos > 5) return (IsValid: false, User: user);//Si el usuario es no valido peor existe instancia de usuario, usuario bloqueado
+        return (IsValid: user != null, User: user);
     }
 
-    private string GenerateJwtToken(User user)
+    private string GenerateJwtToken(ClsUser user)
     {
         SecurityTokenDescriptor tokenDescriptor = new()
         {
             Subject = new ClaimsIdentity(new[]
             {
-                new Claim("Id", user.Id.ToString()),
+                new Claim("Id", user.id.ToString()),
+                new Claim("persona_id", user.persona.id.ToString()),
+                new Claim(JwtRegisteredClaimNames.Email, user.email),
+                new Claim("urlFoto", user.urlFoto),
+                new Claim(ClaimTypes.Role, user.role),
+                new Claim("estado", user.estado.ToString()),
+                new Claim("idPersReg", user.idPersReg.ToString()),
+                new Claim("dtReg", user.dtReg.ToString()),
                 //new Claim(JwtRegisteredClaimNames.Sub, user.nombre
                 //new Claim(ClaimTypes.Role, "SuperAdmin")
                 //new Claim("Rol", user.rol),
-                new Claim(ClaimTypes.Role, user.role),
                 /* Claim("usuario", user.Identification),
                 new Claim("nombre", user.nombre),
                 new Claim("apellido", user.apellido),
-                new Claim("cedula", user.cedula),
-                new Claim("nacimiento", user.nacimiento.ToString()),*/
-                new Claim("urlFoto", user.urlFoto),
-                new Claim(JwtRegisteredClaimNames.Email, user.Email),
+                new Claim("cedula", user.cedula),*/
                 new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString())
             }),
             Expires = DateTime.UtcNow.AddHours(24),
-            Issuer = _configuration["Jwt:Issuer"],
-            Audience = _configuration["Jwt:Audience"],
+            Issuer = "emisor",//_configuration["Jwt:Issuer"],
+            Audience = "audiencia",//_configuration["Jwt:Audience"],
             SigningCredentials = new SigningCredentials(
-                new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]!)),
+                new SymmetricSecurityKey(Encoding.ASCII.GetBytes("54vD8gL9MfQ7sT2yX1pW5K6zC3nH0bJ8dA4qY7vX9tR2L6mP5wZ3N1pQ8kT7sF6y")),//_configuration["Jwt:Key"]!
                 SecurityAlgorithms.HmacSha512Signature)
         };
 
@@ -102,20 +116,20 @@ public class AuthAppService : IAuthAppService
         return new ResetPasswordDTO(false, "No se encontró el usuario");
     }
 
-    public ResetPasswordDTO ResetPassword(ResetPasswordRequest login)
+    public async Task<ResetPasswordDTO> ResetPassword(ResetPasswordRequest login)
     {
-        (bool IsValid, User? User) _validUser = IsValidUser(login.Identification);
+        (bool IsValid, ClsUser? User) _validUser = await IsValidUser(login.Identification);
         if (_validUser.IsValid)
         {
             if (_validUser.User != null)
             {
-                if (CodeIsValid(_validUser.User.Id, login.Code))
+                if (CodeIsValid(_validUser.User.id, login.Code))
                 {
 
-                    User? _user = _userService.GetById(_validUser.User.Id);
+                    ClsUser? _user = _userService.GetById(_validUser.User.id);
                     if (_user != null)
                     {
-                        _user.Password = login.Password;
+                        _user.password = login.Password;
                         _userService.UpdatePassword(_user);
                         //_unitOfWork.SaveChanges();
                         return new ResetPasswordDTO(true, "Clave actualizada");
@@ -169,7 +183,7 @@ public class AuthAppService : IAuthAppService
         return false;
     }
 
-    private bool CodeIsValid(int userId, string code)
+    private bool CodeIsValid(int? userId, string code)
     {
         /*var time = DateTime.Now.AddMinutes(-5);
         return _userService.GetAll(a => a.Id == userId && a.TempCode == code && a.TempCodeCreateAt >= time).FirstOrDefault() != null;*/
@@ -178,11 +192,11 @@ public class AuthAppService : IAuthAppService
 
     private void SaveCodeInDatabase(int userId, string code)
     {
-        User? _user = null;// _userService.GetById(userId);
+        ClsUser? _user = null;// _userService.GetById(userId);
         if (_user != null)
         {
-            _user.TempCode = code;
-            _user.TempCodeCreateAt = DateTime.Now;
+            _user.tempCode = code;
+            _user.tempCodeCreateAt = DateTime.Now;
             /*_userService.Update(_user);
             _unitOfWork.SaveChanges();*/
         }

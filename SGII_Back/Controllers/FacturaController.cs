@@ -1,39 +1,36 @@
-﻿using Dominio;
 using Dominio.DB;
-using SGII_Back.Util;
+using Dominio;
 using Microsoft.AspNetCore.Mvc;
 
 namespace SGII_Back.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CondicionLaboralController : Controller
+    public class FacturaController : Controller
     {
-
-        DbCondicionLaboral dbCondicionLaboral = new DbCondicionLaboral();
-        // GET: api/CondicionLaboral
+        DbFactura dbFactura = new DbFactura();
+        // GET: api/Factura
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ClsCondicionLaboral>>> Get([FromQuery] FetchDataCondicionLaboral fetchData)
+        public async Task<ActionResult<IEnumerable<ClsFactura>>> Get([FromQuery] FetchDataFactura fetchData)
         {
             try
             {
-                List<ClsCondicionLaboral> items = await dbCondicionLaboral.ListarAsync(fetchData);
+                List<ClsFactura> items = await dbFactura.ListarAsync(fetchData);
                 return Ok(items);
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
-
         }
 
-        // GET api/CondicionLaboral/5
+        // GET api/Factura/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<ClsCondicionLaboral>> Get(int id)
+        public async Task<ActionResult<ClsFactura>> Get(int id)
         {
             try
             {
-                ClsCondicionLaboral item = await dbCondicionLaboral.ObtenerPorIdAsync(id);
+                ClsFactura item = await dbFactura.ObtenerPorIdAsync(id);
                 if (item == null)
                 {
                     return NotFound();
@@ -46,9 +43,9 @@ namespace SGII_Back.Controllers
             }
         }
 
-        // POST api/CondicionLaboral
+        // POST api/Factura
         [HttpPost]
-        public async Task<ActionResult<ClsCondicionLaboral>> Post([FromBody] ClsCondicionLaboral item)
+        public async Task<ActionResult<ClsFactura>> Post([FromBody] ClsFactura item)
         {
             try
             {
@@ -56,7 +53,7 @@ namespace SGII_Back.Controllers
                 {
                     return BadRequest("El item no puede ser nulo");
                 }
-                await dbCondicionLaboral.CrearAsync(item);
+                await dbFactura.CrearAsync(item);
                 return CreatedAtAction(nameof(Get), new { id = item.id }, item);
             }
             catch (Exception ex)
@@ -65,9 +62,9 @@ namespace SGII_Back.Controllers
             }
         }
 
-        // PUT api/CondicionLaboral/5
+        // PUT api/Factura/5
         [HttpPut("{id}")]
-        public async Task<ActionResult> Put(int id, [FromBody] ClsCondicionLaboral item)
+        public async Task<ActionResult> Put(int id, [FromBody] ClsFactura item)
         {
             try
             {
@@ -75,13 +72,13 @@ namespace SGII_Back.Controllers
                 {
                     return BadRequest("El item no puede ser nulo"); // Si el item es nulo, devuelve 400
                 }
-                ClsCondicionLaboral itemExistente = await dbCondicionLaboral.ObtenerPorIdAsync((int)item.idApi!);
+                ClsFactura itemExistente = await dbFactura.ObtenerPorIdAsync((int)item.idApi!);
                 item.id = item.idApi;
                 if (item == null)
                 {
                     return NotFound();
                 }
-                await dbCondicionLaboral.EditarAsync(item);
+                await dbFactura.EditarAsync(item);
                 return Ok();
             }
             catch (Exception ex)
@@ -90,18 +87,18 @@ namespace SGII_Back.Controllers
             }
         }
 
-        // DELETE api/CondicionLaboral/5
+        // DELETE api/Factura/5
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
             try
             {
-                ClsCondicionLaboral itemExistente = await dbCondicionLaboral.ObtenerPorIdAsync(id);
+                ClsFactura itemExistente = await dbFactura.ObtenerPorIdAsync(id);
                 if (itemExistente == null)
                 {
                     return NotFound();
                 }
-                await dbCondicionLaboral.EliminarAsync(id);
+                await dbFactura.EliminarAsync(id);
                 return Ok();
             }
             catch (Exception ex)

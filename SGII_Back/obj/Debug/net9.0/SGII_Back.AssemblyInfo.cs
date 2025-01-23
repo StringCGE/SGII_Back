@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SGII_Back")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6faeac0b7fce1bf7ac8081f56f55d9cdb5dcae28")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ea565bac8c96d88da54e1531125e38df5e85f32")]
 [assembly: System.Reflection.AssemblyProductAttribute("SGII_Back")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SGII_Back")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

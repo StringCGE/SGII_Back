@@ -73,7 +73,7 @@ namespace SGII_Back.Controllers
                     return BadRequest("El item no puede ser nulo"); // Si el item es nulo, devuelve 400
                 }
                 ClsPersona itemExistente = await dbPersona.ObtenerPorIdAsync((int)item.idApi!);
-                item.id = item.idApi;
+                item.id = item.idApi ?? 0;
                 if (item == null)
                 {
                     return NotFound();

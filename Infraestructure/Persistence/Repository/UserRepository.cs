@@ -5,7 +5,7 @@ using SGII_Back.Dominio.Interfaces.Repositories;
 
 namespace Dominio.Infrastructure.Persistence.Repository;
 
-public class UserRepository : BaseRepository<User>, IUserRepository
+public class UserRepository : BaseRepository<ClsUser>, IUserRepository
 {
 
     public UserRepository() :

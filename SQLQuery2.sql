@@ -1,30 +1,62 @@
-﻿
-USE SGII_BackDB;
-GO
+﻿use SGII_BackDB;
 
--- Crear tabla para almacenar los datos de los colaboradores
-CREATE TABLE Colaboradores (
-    id INT IDENTITY(1,1) PRIMARY KEY,                    -- ID único, autoincremental
-    idPersona INT NULL,                                   -- ID de la persona asignada (puede ser NULL)
-    idCargo INT NULL,                                     -- ID del cargo del colaborador
-    sueldo FLOAT NULL,                                    -- Sueldo del colaborador (puede ser NULL)
-    estadoLaboral NVARCHAR(50) NULL,                      -- Estado laboral (puede ser NULL)
-    tipoContrato NVARCHAR(50) NULL,                       -- Tipo de contrato (puede ser NULL)
-    horasTrabajo INT NULL,                                -- Horas de trabajo (puede ser NULL)
-    contrato NVARCHAR(255) NULL,                          -- Ruta del archivo de contrato (puede ser NULL)
-    idTipoColab INT NULL,                                 -- ID del tipo de colaborador (puede ser NULL)
-    
-    -- Campos heredados de ClsDbObj
-    idApi INT NULL,                                       -- ID en API
-    dtReg DATETIME NULL,                                  -- Fecha de registro
-    idPersReg INT NULL,                                   -- ID de la persona que registra
-    estado INT NULL,                                      -- Estado del colaborador
-    take INT NULL,                                        -- Cantidad de datos a obtener (si aplica)
-    offsetDT DATETIME NULL,                               -- Offset de fecha y hora
-     
-    -- Campos heredados de ClsAsignacion
-    fechaDeAsignacion DATETIME NULL,                      -- Fecha de asignación
-    inicioAsignacion DATETIME NULL,                       -- Fecha de inicio de la asignación
-    finAsignacion DATETIME NULL                           -- Fecha de fin de la asignación
+Drop Table RegistroDoc;
+
+CREATE TABLE RegistroDoc (
+    secuencial NVARCHAR(255) NULL,
+    razonSocial NVARCHAR(255) NULL,
+    identificacion NVARCHAR(255) NULL,
+    fechaEmision NVARCHAR(255) NULL,
+    numeroGuiaRemision NVARCHAR(255) NULL,
+    codigoNumerico NVARCHAR(255) NULL,
+    verificador NVARCHAR(255) NULL,
+    denomComproModif INT NULL,
+    numComproModif NVARCHAR(255) NULL,
+    comproModif INT NULL,
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    dtReg DATETIME NULL,
+    idPersReg INT NULL,
+    estado INT NULL,
+
 );
-GO
+Drop Table FacturaNotaCredito;
+CREATE TABLE FacturaNotaCredito (
+    emisor_id INT NULL,
+    registroFactura_id INT NULL,
+    cliente_id INT NULL,
+    claveAcceso NVARCHAR(255) NULL,
+    esFactura BIT,
+    autorizacion NVARCHAR(255) NULL,
+    subtotalPrevio FLOAT NULL,
+    subtotal0 FLOAT NULL,
+    descuento FLOAT NULL,
+    subtotal FLOAT NULL,
+    iva FLOAT NULL,
+    total FLOAT NULL,
+    pagoEfectivo FLOAT NULL,
+    pagoTarjetaDebCred FLOAT NULL,
+    pagoOtraForma FLOAT NULL,
+    pagoOtraFormaDetalle NVARCHAR(255) NULL,
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    dtReg DATETIME NULL,
+    idPersReg INT NULL,
+    estado INT NULL,
+    FOREIGN KEY (emisor_id) REFERENCES emisorItem(id),
+    FOREIGN KEY (registroFactura_id) REFERENCES registroDoc(id),
+    FOREIGN KEY (cliente_id) REFERENCES cliente(id),
+);
+Drop Table ItemFacturaNotaCredito;
+CREATE TABLE ItemFacturaNotaCredito (
+    facturaNotaCredito_id INT NULL,
+    cantidad INT NULL,
+    producto_id INT NULL,
+    precioUnitario FLOAT NULL,
+    total FLOAT NULL,
+    tipoTransac INT NULL,
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    dtReg DATETIME NULL,
+    idPersReg INT NULL,
+    estado INT NULL,
+    FOREIGN KEY (facturaNotaCredito_id) REFERENCES facturaNotaCredito(id),
+    FOREIGN KEY (producto_id) REFERENCES producto(id),
+);

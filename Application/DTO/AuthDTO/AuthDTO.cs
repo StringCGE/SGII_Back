@@ -36,4 +36,7 @@ public class AuthDTO
     public string Message { get; set; }
     public string Token { get; set; }
     public DateTimeOffset Date { get; set; }
+
+    public int intentos { get; set; }
+    public bool usuarioBloqueado { get; set; }
 }

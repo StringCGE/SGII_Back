@@ -1,38 +1,36 @@
-﻿using Dominio;
 using Dominio.DB;
-using Microsoft.AspNetCore.Http;
+using Dominio;
 using Microsoft.AspNetCore.Mvc;
 
 namespace SGII_Back.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class FuncionParticipanteController : Controller
+    public class FacturaNotaCreditoController : Controller
     {
-        DbFuncionParticipante dbFuncionParticipante = new DbFuncionParticipante();
-        // GET: api/FuncionParticipante
+        DbFacturaNotaCredito dbFacturaNotaCredito = new DbFacturaNotaCredito();
+        // GET: api/FacturaNotaCredito
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ClsFuncionParticipante>>> Get([FromQuery] FetchDataFuncionParticipante fetchData)
+        public async Task<ActionResult<IEnumerable<ClsFacturaNotaCredito>>> Get([FromQuery] FetchDataFacturaNotaCredito fetchData)
         {
             try
             {
-                List<ClsFuncionParticipante> items = await dbFuncionParticipante.ListarAsync(fetchData);
+                List<ClsFacturaNotaCredito> items = await dbFacturaNotaCredito.ListarAsync(fetchData);
                 return Ok(items);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
-            
         }
 
-        // GET api/FuncionParticipante/5
+        // GET api/FacturaNotaCredito/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<ClsFuncionParticipante>> Get(int id)
+        public async Task<ActionResult<ClsFacturaNotaCredito>> Get(int id)
         {
             try
             {
-                ClsFuncionParticipante item = await dbFuncionParticipante.ObtenerPorIdAsync(id);
+                ClsFacturaNotaCredito item = await dbFacturaNotaCredito.ObtenerPorIdAsync(id);
                 if (item == null)
                 {
                     return NotFound();
@@ -45,9 +43,9 @@ namespace SGII_Back.Controllers
             }
         }
 
-        // POST api/FuncionParticipante
+        // POST api/FacturaNotaCredito
         [HttpPost]
-        public async Task<ActionResult<ClsFuncionParticipante>> Post([FromBody] ClsFuncionParticipante item)
+        public async Task<ActionResult<ClsFacturaNotaCredito>> Post([FromBody] ClsFacturaNotaCredito item)
         {
             try
             {
@@ -55,8 +53,16 @@ namespace SGII_Back.Controllers
                 {
                     return BadRequest("El item no puede ser nulo");
                 }
-                await dbFuncionParticipante.CrearAsync(item);
-                return CreatedAtAction(nameof(Get), new { id = item.id }, item);
+                int result = await dbFacturaNotaCredito.CrearAsync(item);
+                if (result == 1)
+                {
+                    return CreatedAtAction(nameof(Get), new { id = item.id }, item);
+                }
+                else
+                {
+                    return BadRequest("No se inserto la factura");
+                }
+                
             }
             catch (Exception ex)
             {
@@ -64,9 +70,9 @@ namespace SGII_Back.Controllers
             }
         }
 
-        // PUT api/FuncionParticipante/5
+        // PUT api/FacturaNotaCredito/5
         [HttpPut("{id}")]
-        public async Task<ActionResult> Put(int id, [FromBody] ClsFuncionParticipante item)
+        public async Task<ActionResult> Put(int id, [FromBody] ClsFacturaNotaCredito item)
         {
             try
             {
@@ -74,13 +80,13 @@ namespace SGII_Back.Controllers
                 {
                     return BadRequest("El item no puede ser nulo"); // Si el item es nulo, devuelve 400
                 }
-                ClsFuncionParticipante itemExistente = await dbFuncionParticipante.ObtenerPorIdAsync((int)item.idApi!);
+                ClsFacturaNotaCredito itemExistente = await dbFacturaNotaCredito.ObtenerPorIdAsync((int)item.idApi!);
                 item.id = item.idApi;
                 if (item == null)
                 {
                     return NotFound();
                 }
-                await dbFuncionParticipante.EditarAsync(item);
+                await dbFacturaNotaCredito.EditarAsync(item);
                 return Ok();
             }
             catch (Exception ex)
@@ -89,18 +95,18 @@ namespace SGII_Back.Controllers
             }
         }
 
-        // DELETE api/FuncionParticipante/5
+        // DELETE api/FacturaNotaCredito/5
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
             try
             {
-                ClsFuncionParticipante itemExistente = await dbFuncionParticipante.ObtenerPorIdAsync(id);
+                ClsFacturaNotaCredito itemExistente = await dbFacturaNotaCredito.ObtenerPorIdAsync(id);
                 if (itemExistente == null)
                 {
                     return NotFound();
                 }
-                await dbFuncionParticipante.EliminarAsync(id);
+                await dbFacturaNotaCredito.EliminarAsync(id);
                 return Ok();
             }
             catch (Exception ex)

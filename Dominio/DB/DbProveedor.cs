@@ -60,12 +60,13 @@ namespace Dominio.DB
                 {
                     command.Parameters.AddWithValue("@razonSocial", (object)Proveedor.razonSocial ?? DBNull.Value);
                     command.Parameters.AddWithValue("@ruc", (object)Proveedor.ruc ?? DBNull.Value);
-                    command.Parameters.AddWithValue("@responsable", Proveedor.responsable?.idApi ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@responsable_id", Proveedor.responsable?.idApi ?? (object)DBNull.Value);
                     command.Parameters.AddWithValue("@telefonoResponsable", (object)Proveedor.telefonoResponsable ?? DBNull.Value);
                     command.Parameters.AddWithValue("@direccionMatriz", (object)Proveedor.direccionMatriz ?? DBNull.Value);
                     command.Parameters.AddWithValue("@telefono1", (object)Proveedor.telefono1 ?? DBNull.Value);
                     command.Parameters.AddWithValue("@telefono2", (object)Proveedor.telefono2 ?? DBNull.Value);
                     command.Parameters.AddWithValue("@email", (object)Proveedor.email ?? DBNull.Value);
+                    command.Parameters.AddWithValue("@id", (object)Proveedor.id ?? DBNull.Value);
                     command.Parameters.AddWithValue("@dtReg", (object)Proveedor.dtReg ?? DBNull.Value);
                     command.Parameters.AddWithValue("@idPersReg", (object)Proveedor.idPersReg ?? DBNull.Value);
                     command.Parameters.AddWithValue("@estado", (object)Proveedor.estado ?? DBNull.Value);
@@ -155,7 +156,7 @@ namespace Dominio.DB
             {
                 
                 //var command = new SqlCommand(@"SELECT id, dtReg, idPersReg, estado, nombre1, nombre2, apellido1, apellido2, fechaNacimiento, cedula, sexo_id, estadoCivil_id, nacionalidad_id, grupoSanguineo, tipoSanguineo 
-                var command = new SqlCommand(@"SELECT TOP (@take) razonSocial, ruc, responsable_id, telefonoResponsable, direccionMatriz, telefono1, telefono2, email, id, dtReg, idPersReg, estado
+                var command = new SqlCommand(@"SELECT razonSocial, ruc, responsable_id, telefonoResponsable, direccionMatriz, telefono1, telefono2, email, id, dtReg, idPersReg, estado
                                            FROM Proveedor 
                                            WHERE id = @id
                                            AND estado != 0", connection);

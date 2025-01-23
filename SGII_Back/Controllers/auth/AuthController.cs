@@ -21,14 +21,14 @@ public class AuthController : ControllerBase
     }
 
         [HttpPost()]
-    public IActionResult Login([FromBody] AuthRequest login)
+    public async Task<IActionResult> Login([FromBody] AuthRequest login)
     {
 
-        var _auth = _authService.Login(login);
+        var _auth = await _authService.Login(login);
         if (_auth.Autenticate)
             return Ok(_auth);
 
-        return Ok();// n Unauthorized(_auth);
+        return Unauthorized(_auth);
     }
 
     [HttpPost("ResetPassword")]

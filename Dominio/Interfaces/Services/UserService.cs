@@ -1,4 +1,6 @@
-﻿using SGII_Back.Dominio.Entities;
+﻿using Dominio;
+using Dominio.DB;
+using SGII_Back.Dominio.Entities;
 using SGII_Back.Dominio.Interfaces.Repositories;
 using SGII_Back.Dominio.Interfaces.Services;
 using SGII_Back.Dominio.Shared.Interfaces;
@@ -28,22 +30,24 @@ public class UserService : IUserService
     }
 
 
-    public User? GetById(int userId)
+    public ClsUser? GetById(int? userId)
     => null;
 
-    public IEnumerable<User> GetAll(Expression<Func<User, bool>>? filter = null)
+    public IEnumerable<ClsUser> GetAll(Expression<Func<ClsUser, bool>>? filter = null)
         => null;
 
-    public bool UserNameExist(string name)
+    public async Task<bool> UserNameExist(string name)
     {
+        ClsUser? user = await new DbUser().ObtenerPorEmailAsync(name);
         //if (_userRepository.GetAll(a => a.Identification == name).FirstOrDefault() is not null) return true;
-        return false;
+        bool value = user != null;
+        return value;
 
         /*IEnumerable<User> users = _userRepository.GetAll(a => a.Name == name);
         return users.Count() > 0;*/
     }
 
-    public void Create(User user)
+    public void Create(ClsUser user)
     {
         /*user.Identification = user.Identification.ToLower();
         if (_userRepository.GetAll(a => a.Identification == user.Identification).FirstOrDefault() is not null)
@@ -63,7 +67,7 @@ public class UserService : IUserService
         _unitOfWork.SaveChanges();*/
     }
 
-    public void Update(User user)
+    public void Update(ClsUser user)
     {/*
         if (user is IAudit && _claimsService.Autenticated)
         {
@@ -74,13 +78,13 @@ public class UserService : IUserService
         _unitOfWork.SaveChanges();*/
     }
 
-    public void UpdatePassword(User user)
+    public void UpdatePassword(ClsUser user)
     {
-        var result = _authService.CreateHash(user.Password);
-        user.Password = result.Hash;
-        user.Salt = result.Salt;
-        user.TempCode = null;
-        user.TempCodeCreateAt = null;
+        var result = _authService.CreateHash(user.password);
+        user.password = result.Hash;
+        user.salt = result.Salt;
+        user.tempCode = null;
+        user.tempCodeCreateAt = null;
 
         /*if (user is IAudit && _claimsService.Autenticated)
         {
@@ -122,10 +126,11 @@ public class UserService : IUserService
         return true;
     }
 
-    public User? GetByEmail(string email)
+    public async Task<ClsUser?> GetByEmail(string email)
     {
-        
-        return null;
+        DbUser db_user = new DbUser();
+        ClsUser? user = await db_user.ObtenerPorEmailAsync(email);
+        return user;
     }
 
     /*public async Task<bool> SendConfirmationEmailAsync(string email)

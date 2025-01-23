@@ -20,6 +20,10 @@ namespace Dominio
         /// </summary>
         public string? email { get; set; }
         /// <summary>
+        /// variable Password
+        /// </summary>
+        public string? password { get; set; }
+        /// <summary>
         /// variable UrlFoto
         /// </summary>
         public string? urlFoto { get; set; }
@@ -27,10 +31,6 @@ namespace Dominio
         /// variable Role
         /// </summary>
         public string? role { get; set; }
-        /// <summary>
-        /// variable Password
-        /// </summary>
-        public string? password { get; set; }
         /// <summary>
         /// variable Salt
         /// </summary>
@@ -43,6 +43,12 @@ namespace Dominio
         /// variable TempCodeCreateAt
         /// </summary>
         public DateTime? tempCodeCreateAt { get; set; }
+
+
+        /// <summary>
+        /// los intentos que lleva la persona en errores consecutivos al ingresar psw
+        /// </summary>
+        public int? intentos { get; set; }
     }
     
     public class FetchDataUser : FetchData

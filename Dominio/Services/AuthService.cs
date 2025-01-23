@@ -1,5 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
+using Dominio;
+using Dominio.DB;
 using SGII_Back.Dominio.Entities;
 using SGII_Back.Dominio.Interfaces.Repositories;
 using SGII_Back.Dominio.Interfaces.Services;
@@ -8,21 +10,35 @@ namespace SGII_Back.Dominio.Services;
 
 public class AuthService : IAuthService
 {
-    //private readonly IUserRepository _userRepository;
+    private readonly IUserRepository _userRepository;
 
-    public AuthService(/*IUserRepository usuarioRepository*/)
+    public AuthService(IUserRepository usuarioRepository)
     {
-        //_userRepository = usuarioRepository;
+        _userRepository = usuarioRepository;
     }
 
-    public bool Autenticate(int userId, string password)
+    public async Task<bool> Autenticate(int? userId, string password)
     {
-        /*User? _user = _userRepository.GetById(userId);
-        if (_user == null)
+        //ClsUser? _user = _userRepository.GetById(userId);
+        DbUser db_user = new DbUser();
+        ClsUser? _user = await db_user.ObtenerPorIdAsync(userId ?? 0);
+        if (_user != null)
         {
-
-        }*/
-        return VerifyPassword(password, "",""/*_user.Password, _user.Salt*/);
+            if (VerifyPassword(password, _user.password, _user.salt))
+            {
+                await new DbUser().ResetIntento(_user);
+                return true;
+            }
+            else
+            {
+                await new DbUser().SumarIntento(_user);
+                return false;
+            }
+            
+            //object ooo = CreateHash(password);//Para obtener hash y salt para almacenar el primer usuario en la base de datos
+            
+        }
+        return false;
     }
 
     public static bool VerifyPassword(string enteredPassword, string storedHash, string storedSalt)
@@ -73,5 +89,16 @@ public class AuthService : IAuthService
         }
 
         return Convert.ToBase64String(randomBytes);
+    }
+
+    public async Task<int> Intentos(int? userId)//Si Si no se considera las llamadas a la db peor el apuro
+    {
+        DbUser db_user = new DbUser();
+        ClsUser? _user = await db_user.ObtenerPorIdAsync(userId ?? 0);
+        if (_user != null)
+        {
+            return _user.intentos ?? -1;
+        }
+        return -1;
     }
 }

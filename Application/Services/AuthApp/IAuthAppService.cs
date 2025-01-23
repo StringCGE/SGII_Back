@@ -4,7 +4,7 @@ namespace SGII_Back.Application.Services.AuthApp;
 
 public interface IAuthAppService
 {
-    AuthDTO Login(AuthRequest login);
+    Task<AuthDTO> Login(AuthRequest login);
     Task<ResetPasswordDTO> SendCodeToResetPassword(SendCodeToResetPasswordRequest login);
-    ResetPasswordDTO ResetPassword(ResetPasswordRequest login);
+    Task<ResetPasswordDTO> ResetPassword(ResetPasswordRequest login);
 }

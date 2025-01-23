@@ -1,25 +1,21 @@
-﻿using Dominio;
 using Dominio.DB;
-using SGII_Back.Util;
+using Dominio;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace SGII_Back.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ParticipanteController : Controller
+    public class RegistroFacturaController : Controller
     {
-        DbParticipante dbParticipante = new DbParticipante();
-
-        // GET: api/Participante
+        DbRegistroFactura dbRegistroFactura = new DbRegistroFactura();
+        // GET: api/RegistroFactura
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ClsParticipante>>> Get([FromQuery] FetchDataParticipante fetchData)
+        public async Task<ActionResult<IEnumerable<ClsRegistroFactura>>> Get([FromQuery] FetchDataRegistroFactura fetchData)
         {
             try
             {
-                List<ClsParticipante> items = await dbParticipante.ListarAsync(fetchData);
+                List<ClsRegistroFactura> items = await dbRegistroFactura.ListarAsync(fetchData);
                 return Ok(items);
             }
             catch (Exception ex)
@@ -28,13 +24,13 @@ namespace SGII_Back.Controllers
             }
         }
 
-        // GET api/Participante/5
+        // GET api/RegistroFactura/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<ClsParticipante>> Get(int id)
+        public async Task<ActionResult<ClsRegistroFactura>> Get(int id)
         {
             try
             {
-                ClsParticipante item = await dbParticipante.ObtenerPorIdAsync(id);
+                ClsRegistroFactura item = await dbRegistroFactura.ObtenerPorIdAsync(id);
                 if (item == null)
                 {
                     return NotFound();
@@ -47,18 +43,17 @@ namespace SGII_Back.Controllers
             }
         }
 
-        // POST api/Participante
+        // POST api/RegistroFactura
         [HttpPost]
-        public async Task<ActionResult<ClsParticipante>> Post([FromBody] ClsParticipante item)
+        public async Task<ActionResult<ClsRegistroFactura>> Post([FromBody] ClsRegistroFactura item)
         {
-            //return BadRequest("Probando");
             try
             {
                 if (item == null)
                 {
                     return BadRequest("El item no puede ser nulo");
                 }
-                await dbParticipante.CrearAsync(item);
+                await dbRegistroFactura.CrearAsync(item);
                 return CreatedAtAction(nameof(Get), new { id = item.id }, item);
             }
             catch (Exception ex)
@@ -67,9 +62,9 @@ namespace SGII_Back.Controllers
             }
         }
 
-        // PUT api/Participante/5
+        // PUT api/RegistroFactura/5
         [HttpPut("{id}")]
-        public async Task<ActionResult> Put(int id, [FromBody] ClsParticipante item)
+        public async Task<ActionResult> Put(int id, [FromBody] ClsRegistroFactura item)
         {
             try
             {
@@ -77,13 +72,13 @@ namespace SGII_Back.Controllers
                 {
                     return BadRequest("El item no puede ser nulo"); // Si el item es nulo, devuelve 400
                 }
-                ClsParticipante itemExistente = await dbParticipante.ObtenerPorIdAsync(id);
-                if (itemExistente == null)
+                ClsRegistroFactura itemExistente = await dbRegistroFactura.ObtenerPorIdAsync((int)item.idApi!);
+                item.id = item.idApi;
+                if (item == null)
                 {
                     return NotFound();
                 }
-                item.id = itemExistente.id; // Asegura que se use el ID correcto
-                await dbParticipante.EditarAsync(item);
+                await dbRegistroFactura.EditarAsync(item);
                 return Ok();
             }
             catch (Exception ex)
@@ -92,18 +87,18 @@ namespace SGII_Back.Controllers
             }
         }
 
-        // DELETE api/Participante/5
+        // DELETE api/RegistroFactura/5
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
             try
             {
-                ClsParticipante itemExistente = await dbParticipante.ObtenerPorIdAsync(id);
+                ClsRegistroFactura itemExistente = await dbRegistroFactura.ObtenerPorIdAsync(id);
                 if (itemExistente == null)
                 {
                     return NotFound();
                 }
-                await dbParticipante.EliminarAsync(id);
+                await dbRegistroFactura.EliminarAsync(id);
                 return Ok();
             }
             catch (Exception ex)
@@ -113,4 +108,3 @@ namespace SGII_Back.Controllers
         }
     }
 }
-

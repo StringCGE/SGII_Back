@@ -67,11 +67,12 @@ namespace Dominio.DB
                     command.Parameters.AddWithValue("@apellido2", (object)Persona.apellido2 ?? DBNull.Value);
                     command.Parameters.AddWithValue("@fechaNacimiento", (object)Persona.fechaNacimiento ?? DBNull.Value);
                     command.Parameters.AddWithValue("@cedula", (object)Persona.cedula ?? DBNull.Value);
-                    command.Parameters.AddWithValue("@sexo", Persona.sexo?.idApi ?? (object)DBNull.Value);
-                    command.Parameters.AddWithValue("@estadoCivil", Persona.estadoCivil?.idApi ?? (object)DBNull.Value);
-                    command.Parameters.AddWithValue("@nacionalidad", Persona.nacionalidad?.idApi ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@sexo_id", Persona.sexo?.idApi ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@estadoCivil_id", Persona.estadoCivil?.idApi ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@nacionalidad_id", Persona.nacionalidad?.idApi ?? (object)DBNull.Value);
                     command.Parameters.AddWithValue("@grupoSanguineo", (object)Persona.grupoSanguineo ?? DBNull.Value);
                     command.Parameters.AddWithValue("@tipoSanguineo", (object)Persona.tipoSanguineo ?? DBNull.Value);
+                    command.Parameters.AddWithValue("@id", (object)Persona.id ?? DBNull.Value);
                     command.Parameters.AddWithValue("@dtReg", (object)Persona.dtReg ?? DBNull.Value);
                     command.Parameters.AddWithValue("@idPersReg", (object)Persona.idPersReg ?? DBNull.Value);
                     command.Parameters.AddWithValue("@estado", (object)Persona.estado ?? DBNull.Value);
@@ -166,7 +167,7 @@ namespace Dominio.DB
             {
                 
                 //var command = new SqlCommand(@"SELECT id, dtReg, idPersReg, estado, nombre1, nombre2, apellido1, apellido2, fechaNacimiento, cedula, sexo_id, estadoCivil_id, nacionalidad_id, grupoSanguineo, tipoSanguineo 
-                var command = new SqlCommand(@"SELECT TOP (@take) nombre1, nombre2, apellido1, apellido2, fechaNacimiento, cedula, sexo_id, estadoCivil_id, nacionalidad_id, grupoSanguineo, tipoSanguineo, id, dtReg, idPersReg, estado
+                var command = new SqlCommand(@"SELECT nombre1, nombre2, apellido1, apellido2, fechaNacimiento, cedula, sexo_id, estadoCivil_id, nacionalidad_id, grupoSanguineo, tipoSanguineo, id, dtReg, idPersReg, estado
                                            FROM Persona 
                                            WHERE id = @id
                                            AND estado != 0", connection);

@@ -1,25 +1,21 @@
-﻿using Dominio;
 using Dominio.DB;
-using SGII_Back.Util;
+using Dominio;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace SGII_Back.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ColaboradorController : Controller
+    public class ItemFacturaController : Controller
     {
-        DbColaborador dbColaborador = new DbColaborador();
-
-        // GET: api/Colaborador
+        DbItemFactura dbItemFactura = new DbItemFactura();
+        // GET: api/ItemFactura
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ClsColaborador>>> Get([FromQuery] FetchDataColaborador fetchData)
+        public async Task<ActionResult<IEnumerable<ClsItemFactura>>> Get([FromQuery] FetchDataItemFactura fetchData)
         {
             try
             {
-                List<ClsColaborador> items = await dbColaborador.ListarAsync(fetchData);
+                List<ClsItemFactura> items = await dbItemFactura.ListarAsync(fetchData);
                 return Ok(items);
             }
             catch (Exception ex)
@@ -28,13 +24,13 @@ namespace SGII_Back.Controllers
             }
         }
 
-        // GET api/Colaborador/5
+        // GET api/ItemFactura/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<ClsColaborador>> Get(int id)
+        public async Task<ActionResult<ClsItemFactura>> Get(int id)
         {
             try
             {
-                ClsColaborador item = await dbColaborador.ObtenerPorIdAsync(id);
+                ClsItemFactura item = await dbItemFactura.ObtenerPorIdAsync(id);
                 if (item == null)
                 {
                     return NotFound();
@@ -47,18 +43,17 @@ namespace SGII_Back.Controllers
             }
         }
 
-        // POST api/Colaborador
+        // POST api/ItemFactura
         [HttpPost]
-        public async Task<ActionResult<ClsColaborador>> Post([FromBody] ClsColaborador item)
+        public async Task<ActionResult<ClsItemFactura>> Post([FromBody] ClsItemFactura item)
         {
-            //return BadRequest("Probando");
             try
             {
                 if (item == null)
                 {
                     return BadRequest("El item no puede ser nulo");
                 }
-                await dbColaborador.CrearAsync(item);
+                await dbItemFactura.CrearAsync(item);
                 return CreatedAtAction(nameof(Get), new { id = item.id }, item);
             }
             catch (Exception ex)
@@ -67,9 +62,9 @@ namespace SGII_Back.Controllers
             }
         }
 
-        // PUT api/Colaborador/5
+        // PUT api/ItemFactura/5
         [HttpPut("{id}")]
-        public async Task<ActionResult> Put(int id, [FromBody] ClsColaborador item)
+        public async Task<ActionResult> Put(int id, [FromBody] ClsItemFactura item)
         {
             try
             {
@@ -77,13 +72,13 @@ namespace SGII_Back.Controllers
                 {
                     return BadRequest("El item no puede ser nulo"); // Si el item es nulo, devuelve 400
                 }
-                ClsColaborador itemExistente = await dbColaborador.ObtenerPorIdAsync(id);
-                if (itemExistente == null)
+                ClsItemFactura itemExistente = await dbItemFactura.ObtenerPorIdAsync((int)item.idApi!);
+                item.id = item.idApi;
+                if (item == null)
                 {
                     return NotFound();
                 }
-                item.id = itemExistente.id; // Asegura que se use el ID correcto
-                await dbColaborador.EditarAsync(item);
+                await dbItemFactura.EditarAsync(item);
                 return Ok();
             }
             catch (Exception ex)
@@ -92,18 +87,18 @@ namespace SGII_Back.Controllers
             }
         }
 
-        // DELETE api/Colaborador/5
+        // DELETE api/ItemFactura/5
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
             try
             {
-                ClsColaborador itemExistente = await dbColaborador.ObtenerPorIdAsync(id);
+                ClsItemFactura itemExistente = await dbItemFactura.ObtenerPorIdAsync(id);
                 if (itemExistente == null)
                 {
                     return NotFound();
                 }
-                await dbColaborador.EliminarAsync(id);
+                await dbItemFactura.EliminarAsync(id);
                 return Ok();
             }
             catch (Exception ex)
